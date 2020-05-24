@@ -2,13 +2,13 @@
 
 ## ⛸ Concepts Applied
 
-### 1. DOM Manipulation
+#### 1. DOM Manipulation
 
-### 2. Use of CDN
+#### 2. Use of CDN
 
-### 3. Use of LocalStorage
+#### 3. Use of LocalStorage
 
-### 4. Clearly articulated use of `forEach` function
+#### 4. Clearly articulated use of `forEach` function
 
 ## ☄️ Problem Statement
 
