@@ -6,20 +6,20 @@
 
 #### 2. Use of CDN
 
-##### 3. Use of LocalStorage
+#### 3. Use of LocalStorage
 
-###### 4. Clearly articulated use of `forEach` function
+#### 4. Clearly articulated use of `forEach` function
 
 ## ☄️ Problem Statement
 
 Create a Task-List web application with the following features:
 
-1. Application contains 2 sections:
+###### 1. Application contains 2 sections:
 
-   - 1st Section contains a text-field (taskInput) and a button (submit button) to add tasks.
-   - 2nd Section contains a div (taskList) which displays all tasks; A text field (filter) to search/filter tasks & a button (clearBtn) to clear all tasks.
+- 1st Section contains a text-field (taskInput) and a button (submit button) to add tasks.
+- 2nd Section contains a div (taskList) which displays all tasks; A text field (filter) to search/filter tasks & a button (clearBtn) to clear all tasks.
 
-2. User should be able to add tasks through the text field, which displays immediately in the div (taskList)
+###### 2. User should be able to add tasks through the text field, which displays immediately in the div (taskList)
 
 ## 🌮 Steps
 
