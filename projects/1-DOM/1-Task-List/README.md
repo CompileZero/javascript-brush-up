@@ -8,7 +8,7 @@
 
 ### 3. Use of LocalStorage
 
-### 4. Clearly articulated use of "forEach" function
+### 4. Clearly articulated use of `forEach` function
 
 ## Use Materialize CSS:
 
