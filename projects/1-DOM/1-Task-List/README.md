@@ -1,4 +1,4 @@
-# Project 1 - Task List
+# 🏓 Project 1 - Task List
 
 ## ⛸ Concepts Applied
 
@@ -10,7 +10,7 @@
 
 ### 4. Clearly articulated use of `forEach` function
 
-## Problem Statement
+## ☄️ Problem Statement
 
 Create a Task-List web application with the following features:
 
@@ -21,7 +21,7 @@ Create a Task-List web application with the following features:
 
 2. User should be able to add tasks through the text field, which displays immediately in the div (taskList)
 
-## Steps
+## 🌮 Steps
 
 1. Create a basic HTML layout & import Materialize CSS (CDN) dependencies.
 2. Import Font Awesome (CDN).
