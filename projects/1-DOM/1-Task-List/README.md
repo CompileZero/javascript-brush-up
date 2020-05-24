@@ -10,12 +10,6 @@
 
 ### 4. Clearly articulated use of `forEach` function
 
-## Use Materialize CSS:
-
-### 💡 Tip: Use the CSS cdn before in the head & use the JS cdn below the body
-
-💡 Materialize CSS also needs JQuery as a dependency to work, so use the JQuery CDN, and put the script code above materialize script code.
-
 ## Problem Statement
 
 Tasks - Create a web application with the following features:
@@ -33,3 +27,9 @@ Tasks - Create a web application with the following features:
 2. Import Font Awesome (CDN).
 
 ## Concepts Learnt
+
+## Use Materialize CSS:
+
+### 💡 Tip: Use the CSS cdn before in the head & use the JS cdn below the body
+
+💡 Materialize CSS also needs JQuery as a dependency to work, so use the JQuery CDN, and put the script code above materialize script code.
