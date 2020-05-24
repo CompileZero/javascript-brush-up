@@ -108,7 +108,7 @@ function removeTaskFromLocalStorage(taskItem) {
   let tasks = getTasks();
   tasks.forEach(function (task, index) {
     if (taskItem.textContent === task) {
-      tasks.splice(index, 1);
+      tasks.splice(index, 1); // splice function used to remove 1 item from the list present at "index"
     }
   });
   localStorage.setItem("tasks", JSON.stringify(tasks));
