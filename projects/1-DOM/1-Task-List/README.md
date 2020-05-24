@@ -29,7 +29,7 @@ Tasks - Create a web application with the following features:
 
 ## Steps
 
-1. Create a basic HTML layout
-2.
+1. Create a basic HTML layout & import Materialize CSS (CDN) dependencies.
+2. Import Font Awesome (CDN).
 
 ## Concepts Learnt
