@@ -10,6 +10,9 @@ loadEventListeners();
 
 // Load all Event Listeners function
 function loadEventListeners() {
+  // DOM Load Event
+  document.addEventListener("DOMContentLoaded", loadTasks);
+
   // Add task event
   form.addEventListener("submit", addTask);
 
@@ -23,42 +26,69 @@ function loadEventListeners() {
   filter.addEventListener("keyup", filterTasks);
 }
 
+// Get Tasks
+function getTasks() {
+  let tasks;
+  if (localStorage.getItem("tasks") === null) {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem("tasks"));
+  }
+  return tasks;
+}
+
+// Load Tasks
+function loadTasks() {
+  // Get Tasks Array
+  let tasks = getTasks();
+  tasks.forEach(function (taskValue) {
+    // Create DOM Task element
+    createTaskElement(taskValue);
+  });
+}
 // Add Task
 function addTask(e) {
   // Passing the e (event) parameter is important here
   if (taskInput.value === "") {
     alert("Add a task!");
   } else {
-    // Create li element
+    createTaskElement(taskInput.value); // Create DOM Task element
 
-    const li = document.createElement("li");
+    storeTaskInLocalStorage(taskInput.value); // Store in LS
 
-    // Add Class
-    li.className = "collection-item";
-
-    //Create text node and append to li
-    li.appendChild(document.createTextNode(taskInput.value));
-
-    // Create new link element
-    const link = document.createElement("a");
-
-    // Add Class
-    link.className = "delete-item secondary-content";
-
-    //Add icon html
-    link.innerHTML = "<i class='fa fa-remove'>";
-
-    //Append link to li
-    li.appendChild(link);
-
-    // Append li to ul
-    taskList.appendChild(li);
-
-    // Clear input
-    taskInput.value = "";
+    taskInput.value = ""; // Clear input
   }
 
   e.preventDefault();
+}
+
+// Create Task element
+function createTaskElement(taskValue) {
+  const li = document.createElement("li"); // Create li element
+
+  li.className = "collection-item"; // Add Class
+
+  li.appendChild(document.createTextNode(taskValue)); //Create text node and append to li
+
+  const link = document.createElement("a"); // Create new link element
+
+  link.className = "delete-item secondary-content"; // Add Class
+
+  link.innerHTML = "<i class='fa fa-remove'>"; //Add icon html
+
+  li.appendChild(link); //Append link to li
+
+  taskList.appendChild(li); // Append li to ul
+}
+
+// Store Task in LS
+
+function storeTaskInLocalStorage(task) {
+  //Get TaskArray
+  let tasks = getTasks();
+
+  tasks.push(task);
+  localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
 // Remove Task
@@ -66,8 +96,22 @@ function removeTask(e) {
   if (e.target.parentElement.classList.contains("delete-item")) {
     if (confirm("Are you sure?")) {
       e.target.parentElement.parentElement.remove();
+
+      // Remove from LS
+      removeTaskFromLocalStorage(e.target.parentElement.parentElement);
     }
   }
+}
+
+// Remove from LS
+function removeTaskFromLocalStorage(taskItem) {
+  let tasks = getTasks();
+  tasks.forEach(function (task, index) {
+    if (taskItem.textContent === task) {
+      tasks.splice(index, 1);
+    }
+  });
+  localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
 // Clear Tasks
@@ -78,8 +122,15 @@ function clearTasks() {
   while (taskList.firstChild) {
     taskList.removeChild(taskList.firstChild);
   }
+
+  // Clear tasks from LS
+  clearTasksFromLocalStorage();
 }
 
+// Clear tasks from LS
+function clearTasksFromLocalStorage() {
+  localStorage.removeItem("tasks");
+}
 // Filter Tasks
 
 function filterTasks(e) {
