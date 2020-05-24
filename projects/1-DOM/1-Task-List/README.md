@@ -25,10 +25,10 @@ Create a Task-List web application with the following features:
 
 1. Create a basic HTML layout & import Materialize CSS (CDN) dependencies.
 
-   > 💡 Materialize CSS also needs JQuery as a dependency to work, so use the JQuery CDN, and put the script code above materialize script code.
+   > 💡 Tip: Materialize CSS also needs JQuery as a dependency to work, so use the JQuery CDN, and put the script code above materialize script code.
 
 2. Import Font Awesome (CDN).
 
-   > 💡 Tip: Use the CSS cdn before in the head & use the JS cdn below the body
+   > 💡 Tip: Use the CSS cdn in the `head` & use the JS cdn below the `body`
 
 3. The HTML Layout contains 2 cards stacked
