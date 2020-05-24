@@ -12,12 +12,12 @@
 
 ## Problem Statement
 
-Tasks - Create a web application with the following features:
+Create a Task-List web application with the following features:
 
 1. Application contains 2 sections:
 
-   1. 1st Section contains a text-field (taskInput) and a button (submit button) to add tasks.
-   2. 2nd Section contains a div (taskList) which displays all tasks; A text field (filter) to search/filter tasks & a button (clearBtn) to clear all tasks.
+   - 1st Section contains a text-field (taskInput) and a button (submit button) to add tasks.
+   - 2nd Section contains a div (taskList) which displays all tasks; A text field (filter) to search/filter tasks & a button (clearBtn) to clear all tasks.
 
 2. User should be able to add tasks through the text field, which displays immediately in the div (taskList)
 
