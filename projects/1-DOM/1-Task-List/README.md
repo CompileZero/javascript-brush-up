@@ -1,15 +1,5 @@
 # 🏓 Project 1 - Task List
 
-## ⛸ Concepts Applied
-
-#### 1. DOM Manipulation
-
-#### 2. Use of CDN
-
-#### 3. Use of LocalStorage
-
-#### 4. Clearly articulated use of `forEach` function
-
 ## ☄️ Problem Statement
 
 Create a Task-List web application with the following features:
@@ -20,6 +10,16 @@ Create a Task-List web application with the following features:
 - 2nd Section contains a div (taskList) which displays all tasks; A text field (filter) to search/filter tasks & a button (clearBtn) to clear all tasks.
 
 ##### 2. User should be able to add tasks through the text field, which displays immediately in the div (taskList)
+
+## ⛸ Concepts Applied
+
+#### 1. DOM Manipulation
+
+#### 2. Use of CDN
+
+#### 3. Use of LocalStorage
+
+#### 4. Clearly articulated use of `forEach` function
 
 ## 🌮 Steps
 

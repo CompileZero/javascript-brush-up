@@ -4,5 +4,4 @@
 
 How to use these CheatSheets
 
-> Well, that's why I'm here,
-> to let you know the truth.
+> Well
