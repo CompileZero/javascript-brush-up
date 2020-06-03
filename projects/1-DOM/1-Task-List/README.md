@@ -1,5 +1,10 @@
 # 🏓 Project 1 - Task List
 
+## 📓 Pre-requisites
+
+- Familiarity with JS Fundamentals like, .... (refer to cheatsheets given in the previous folder)
+- Should know what the DOM is
+
 ## ☄️ Problem Statement
 
 Create a Task-List web application with the following features:
