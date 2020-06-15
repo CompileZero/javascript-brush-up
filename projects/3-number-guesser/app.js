@@ -1,7 +1,7 @@
 // Game Values
 let min = 1,
   max = 10,
-  winningNum = 2,
+  winningNum = getWinningNum,
   guessesLeft = 3;
 
 // UI Elements
@@ -16,36 +16,45 @@ message = document.querySelector(".message");
 minNum.textContent = min;
 maxNum.textContent = max;
 
+//Play Again Event Listener
+game.addEventListener("mousedown", function (e) {
+  if (e.target.className === "play-again") {
+    window.location.reload();
+  }
+});
 //Listen for Guess
 guessBtn.addEventListener("click", function () {
   let guess = parseInt(guessInput.value);
+  console.log(guess);
 
   //Validate
   if (isNaN(guess) || guess < min || guess > max) {
     setMessage(`Please enter a number ${min} and ${max}`, "red");
-  }
-
-  // Check if won
-
-  if (guess === winningNum) {
-    // Game-over Won
-    gameOver(true, `${winningNum} is Correct, YOU WIN!`);
   } else {
-    // Wrong Number
-    guessesLeft -= 1;
-
-    if (guessesLeft === 0) {
-      // Game Over - lost
-      gameOver(false, `Game over, you lost. The correct num was ${winningNum}`);
+    // Check if won
+    if (guess === winningNum) {
+      // Game-over Won
+      gameOver(true, `${winningNum} is Correct, YOU WIN!`);
     } else {
-      //Game continues - answer wrong
-      setMessage(
-        `${guess} is not correct. ${guessesLeft} guesses left.`,
-        "red"
-      );
+      // Wrong Number
+      guessesLeft -= 1;
 
-      //Clear Input
-      guessInput.value = "";
+      if (guessesLeft === 0) {
+        // Game Over - lost
+        gameOver(
+          false,
+          `Game over, you lost. The correct num was ${winningNum}`
+        );
+      } else {
+        //Game continues - answer wrong
+        setMessage(
+          `${guess} is not correct. ${guessesLeft} guesses left.`,
+          "red"
+        );
+
+        //Clear Input
+        guessInput.value = "";
+      }
     }
   }
 });
@@ -62,6 +71,10 @@ function gameOver(won, msg) {
 
   // Set Message
   setMessage(msg, color);
+
+  // Play again?
+  guessBtn.value = "Play Again";
+  guessBtn.className += "play-again";
 }
 
 // Set Message
