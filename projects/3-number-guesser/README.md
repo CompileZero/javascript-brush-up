@@ -1,0 +1,1 @@
+💡 Instead of `let a =10; let b=20;` use `let a=10, b=20;`
