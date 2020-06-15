@@ -6,4 +6,4 @@
 
 https://www.udemy.com/course/modern-javascript-from-the-beginning/
 
-#### The only JavaScript guide you need to
+#### These are my personal notes while learning JavaScript. We tend to forget many things while learning to code. This repo serves a brush up of JavaScript Concepts, with cheatsheets and simple-projects for you to glance over the code.
