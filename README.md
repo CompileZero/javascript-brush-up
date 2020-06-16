@@ -1,4 +1,4 @@
-# The javascript Learning Kit
+# The javascript Brush Up Kit
 
 ## A beginner-friendly curated Javascript Guide Kit to master the basic concepts of JavaScript
 
