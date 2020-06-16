@@ -27,7 +27,7 @@ console.log(brad.calculateAge());
 const name1 = "Jeff";
 const name2 = new String("Jeff");
 
-//name2.foo = 'bar';
+//name2.foo = 'bar'; // This will append a property 'foo' in the name2 string object
 // console.log(name2);
 
 console.log(typeof name2);
@@ -84,6 +84,46 @@ function Person(firstName, lastName, dob) {
   //   return Math.abs(ageDate.getUTCFullYear() - 1970);
   // }
 }
+/*
+Why to use Prototype?
+There is a clear reason why you should use prototypes when creating classes in JavaScript.
+
+>They use less memory.
+
+// In JavaScript
+function Animal(name){
+  // this is the class and the constructor at the same time.
+  // Ex: var cat = new Animal('cat') 
+  this.name = name;
+}
+So when we call new Animal() the constructor is called immediately. This is where the problem of performance occurs. Imagine I define three functions inside the constructor, this means every single time, those functions are defined anew.
+
+function Animal(){
+  this.walk = function(){};
+  this.talk = function(){};
+  this.jump = function(){};
+}
+We are creating duplicate functions every single time. If I create two or three objects, then the problem is negligible. But if we create a herd of animals, we start seeing our memory growing because for each animal we are creating a whole new method at run time/instance time.
+
+var cat = new Animal();
+var dog = new Animal();
+(cat.walk === dog.walk) // false 
+The walk of the first object is different then the walk of the second object because each was created during instantiation. In other words, Animal does not know that the method walk() exists before being instantiated.
+
+The solution to the problem is to use Prototypes. What it does is allow us to define the methods once, as a blue print, and have each instance build from it.
+
+function Animal(){};
+Animal.prototype.walk = function(){};
+Animal.prototype.talk = function(){};
+Animal.prototype.jump = function(){};
+Now any new instance has a blue print of the class before being created. So every walk is a walk, and every jump is a jump:
+
+var cat = new Animal();
+var dog = new Animal();
+(cat.walk === dog.walk) // true
+
+Link to explanation : https://idiallo.com/javascript/why-use-prototypes
+*/
 
 // Calculate age
 Person.prototype.calculateAge = function () {
@@ -98,7 +138,7 @@ Person.prototype.getFullName = function () {
 };
 
 // Gets Married
-Person.prototype.getsMaried = function (newLastName) {
+Person.prototype.getsMarried = function (newLastName) {
   this.lastName = newLastName;
 };
 
@@ -111,7 +151,7 @@ console.log(john.calculateAge());
 
 console.log(mary.getFullName());
 
-mary.getsMaried("Smith");
+mary.getsMarried("Smith");
 
 console.log(mary.getFullName());
 
@@ -131,13 +171,20 @@ Person.prototype.greeting = function () {
   return `Hello there ${this.firstName} ${this.lastName}`;
 };
 
+/* The above code can also be written as
+// Greeting
+Person.__proto__.greeting = function () {
+  return `Hello there ${this.firstName} ${this.lastName}`;
+};
+*/
+
 const person1 = new Person("John", "Doe");
 
 console.log(person1.greeting());
 
 // Customer constructor
 function Customer(firstName, lastName, phone, membership) {
-  Person.call(this, firstName, lastName);
+  Person.call(this, firstName, lastName); // Call function allows to call a function from another function in current context
 
   this.phone = phone;
   this.membership = membership;
@@ -258,3 +305,5 @@ const john = new Customer("John", "Doe", "555-555-5555", "Standard");
 console.log(john.greeting());
 
 console.log(Customer.getMembershipCost());
+
+// Learn Awesome OOP Concepts in JavaScript : https://www.youtube.com/watch?v=PFmuCDHHpwk (Tutorial by Mosh Hamedani)
