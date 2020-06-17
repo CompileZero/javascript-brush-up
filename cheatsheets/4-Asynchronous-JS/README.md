@@ -28,3 +28,19 @@
 
 ![Libraries and Other methods in place of XHR](media/17-16-13-55.png)
 
+### What is an API?
+
+![What is an API?](media/17-16-26-03.png)
+
+
+### What are REST API's
+
+![What are REST API's?](media/17-16-26-40.png)
+
+### HTTP Requests
+
+![HTTP Requests](media/17-16-27-47.png)
+
+### API Endpoints
+
+![API EndPoints](media/17-16-29-16.png)
