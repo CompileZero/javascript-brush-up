@@ -19,3 +19,12 @@
 ![AJAX Explained](media/17-16-11-07.png)
 
 ![Working of AJAX](media/17-16-11-27.png)
+
+### XMLHttpRequest (XHR) Object
+
+![XHR Object](media/17-16-13-30.png)
+
+### Other Libraries and API's
+
+![Libraries and Other methods in place of XHR](media/17-16-13-55.png)
+
