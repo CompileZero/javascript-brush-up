@@ -145,3 +145,22 @@ function filterTasks(e) {
     }
   }); //Query selector directly returns a node list
 }
+
+MyClass = function () {
+  this.a = "hello";
+  this.b = "world";
+};
+
+MyClass.prototype.a = "john";
+MyClass.prototype.c = 12;
+
+obj = new MyClass();
+
+console.log(obj.d);
+var a = {};
+var b = a;
+
+a.v = 1;
+b.v = 2;
+
+console.log(a.v);
