@@ -283,3 +283,7 @@ html = `
   </ul>
 `;
 ```
+
+Null & Undefined
+
+![Null & Undefined](images/2020-07-22-20-11-02.png)
