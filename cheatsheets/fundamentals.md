@@ -1,4 +1,5 @@
 # 5 Types of Primitive Types
+
 1. Number
 2. String
 3. Boolean
@@ -8,9 +9,10 @@
 #### Technically there are 2 more: Symbol & BigInt
 
 ## Numbers
+
 1. JS has only 1 numbers, (as opposed to java,and C++ where we have int,float, double etc.), which can be whole numbers, integers ( + / - ), and decimal numbers
 2. Does not store infinitely precise numbers (eg. 1.00090909090903 will give output **1**)
-3. 5 ** 2 = 5 to the power 2 = 25
+3. 5 \*\* 2 = 5 to the power 2 = 25
 4. Arithmetic Operations follow BODMAS rule
 5. NaN = Not a number
    1. 0 / 0 = NaN
@@ -21,4 +23,9 @@
 ## Variables
 
 ### Let
+
 1. Reserved Keyword
+
+### Const
+
+![Const](images/2020-07-22-14-38-09.png)
