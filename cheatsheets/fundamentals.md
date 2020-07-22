@@ -36,8 +36,65 @@
 
 ![Use of Var](images/2020-07-22-14-43-33.png)
 
+#### Use Cases
+
+```javascript
+//var, let, const
+//AR - Block Scoped
+var name = 'John Doe';
+console.log(name);
+name = 'Steve Smith';
+console.log(name);
+
+// Init var
+var greeting;
+console.log(greeting);
+greeting = 'Hello';
+console.log(greeting);
+
+// letters, numbers, _, $
+// Can not start with number
+
+// Multi word vars
+var firstName = 'John'; // Camel case
+var first_name = 'Sara'; // Underscore
+var FirstName = 'Tom'; // Pascal case
+var firstname;
+
+// LET - Function Scoped
+let name;
+name = 'John Doe';
+console.log(name);
+name = 'Steve Smith';
+console.log(name);
+
+// CONST - Cannot be reassigned
+const name = 'John';
+console.log(name);
+//Can not reassign
+name = 'Sara';
+//Have to assign a value
+const greeting;
+```
+
 ### Boolean
 
 ![True or False Boolean](images/2020-07-22-14-46-41.png)
 
 ![Variables can change Type!](images/2020-07-22-14-48-03.png)
+
+### String
+
+1. Be consistent with quotes!
+   ![Be consistent with Quotes](images/2020-07-22-14-48-49.png)
+
+### String Properties
+
+1. `.length` property is used to access length of a string.
+2. Strings are immutable. (A string characters cannot be changed/manipulated)
+3. Every method on string does not change the string itself
+
+   ```javascript
+   let str = "Hello";
+   str.toUpperCase(); // This will return "HELLO" but value of str will still remain "Hello"
+   ```
