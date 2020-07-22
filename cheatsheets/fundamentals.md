@@ -332,3 +332,36 @@ val = Math.floor(Math.random() * 20 + 1);
 ### parseInt & parseFloat
 
 ![parseInt & parseFloat](images/2020-07-22-20-18-51.png)
+
+### Type Conversion
+
+```js
+// TYPE CONVERSION
+
+let val;
+
+// Number to string
+val = String(555);
+val = String(4 + 4);
+// Bool to string
+val = String(true);
+// Date to string
+val = String(new Date());
+// Array to string
+val = String([1, 2, 3, 4]);
+
+// toString()
+val = (5).toString();
+val = true.toString();
+
+// String to number
+val = Number("5");
+val = Number(true);
+val = Number(false);
+val = Number(null);
+val = Number("hello");
+val = Number([1, 2, 3]);
+
+val = parseInt("100.30");
+val = parseFloat("100.30");
+```
