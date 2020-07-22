@@ -29,3 +29,9 @@
 ### Const
 
 ![Const](images/2020-07-22-14-38-09.png)
+
+### Var
+
+1. It makes no sense to use it now-a-days. (Its the old way of using it)
+
+![Use of Var](images/2020-07-22-14-43-33.png)
