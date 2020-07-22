@@ -162,46 +162,46 @@ const tags = "web design,web development,programming";
 
 let val;
 
-val = firstName + lastName;
+val = firstName + lastName; // O/P: "WilliamJohnson"
 
 // Concatenation
-val = firstName + " " + lastName;
+val = firstName + " " + lastName; // O/P: "William Johnson"
 
 // Append
 val = "Brad ";
-val += "Traversy";
+val += "Traversy"; // O/P: "Brad Traversy"
 
 val = "Hello, my name is " + firstName + " and I am " + age;
 
-// Escaping
-val = "That's awesome, I can't wait";
+// Escaping Characters
+val = "That's awesome, I can't wait"; // O/P: "That's awesome, I can't wait" Notice that even though there are single quotes inside the double quotes, js treats them as characters
+//Conversely this can also be written as val='That"s Awesome, I can"t wait' and this time double-quotes will be treated as characters
 
 // Length
-val = firstName.length;
+val = firstName.length; // O/P: 7
 
 // concat()
-val = firstName.concat(" ", lastName);
+val = firstName.concat(" ", lastName); // O/P: "William Johnson"
 
 // Change case
-val = firstName.toUpperCase();
-val = firstName.toLowerCase();
+val = firstName.toUpperCase(); // O/P: "WILLIAM"
+val = firstName.toLowerCase(); // O/P: "william"
 
-val = firstName[2];
+val = firstName[2]; // O/P: "l"
 
 // indexOf()
-val = firstName.indexOf("l");
-val = firstName.lastIndexOf("l");
+val = firstName.indexOf("l"); // O/P: 2
+val = firstName.lastIndexOf("l"); // O/P: 3
 
 // charAt()
-val = firstName.charAt("2");
-// Get last char
-val = firstName.charAt(firstName.length - 1);
+val = firstName.charAt("2"); // O/P: "l"
+
 
 // substring()
-val = firstName.substring(0, 4);
+val = firstName.substring(0, 4); // O/P: Will
 
 // slice()
-val = firstName.slice(0, 4);
+val = firstName.slice(0, 4); // 
 val = firstName.slice(-3);
 
 // split()
