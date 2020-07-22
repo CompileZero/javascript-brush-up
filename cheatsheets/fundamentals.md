@@ -35,3 +35,9 @@
 1. It makes no sense to use it now-a-days. (Its the old way of using it)
 
 ![Use of Var](images/2020-07-22-14-43-33.png)
+
+### Boolean
+
+![True or False Boolean](images/2020-07-22-14-46-41.png)
+
+![Variables can change Type!](images/2020-07-22-14-48-03.png)
