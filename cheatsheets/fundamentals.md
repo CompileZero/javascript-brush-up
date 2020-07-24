@@ -365,3 +365,31 @@ val = Number([1, 2, 3]);
 val = parseInt("100.30");
 val = parseFloat("100.30");
 ```
+
+### Equality
+
+#### Double Equals
+
+![Double Equals](images/2020-07-24-16-35-34.png)
+![Double Equal Examples](images/2020-07-24-16-36-26.png)
+
+#### Triple Equals
+
+> Also called Strict Equality Operator
+> ![Triple Equals](images/2020-07-24-16-37-23.png)
+
+#### Comparison
+
+![Comparison](images/2020-07-24-16-39-18.png)
+
+#### Running Code in a Script
+
+![Running COde in a Script](images/2020-07-24-16-39-54.png)
+
+### Truthy & Falsy ness
+
+![Truthy and Falsy](images/2020-07-24-16-43-07.png)
+
+### Operator Precedence
+
+![Operator Precedence](images/2020-07-24-16-45-47.png)
