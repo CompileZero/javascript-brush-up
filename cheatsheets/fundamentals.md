@@ -22,16 +22,17 @@
   - [4.8. TypeOf Operator](#48-typeof-operator)
   - [4.9. parseInt & parseFloat](#49-parseint--parsefloat)
   - [4.10. Type Conversion](#410-type-conversion)
-  - [4.11. Equality](#411-equality)
-    - [4.11.1. Double Equals](#4111-double-equals)
-    - [4.11.2. Triple Equals](#4112-triple-equals)
-    - [4.11.3. Comparison](#4113-comparison)
-    - [4.11.4. Running Code in a Script](#4114-running-code-in-a-script)
-  - [4.12. Truthy & Falsy ness](#412-truthy--falsy-ness)
-  - [4.13. Operator Precedence](#413-operator-precedence)
-  - [4.14. Switch](#414-switch)
-  - [4.15. When to Use and When Not-To Use Break](#415-when-to-use-and-when-not-to-use-break)
-  - [4.16. Ternary Operator](#416-ternary-operator)
+- [5. Conditionals](#5-conditionals)
+  - [5.1. Equality](#51-equality)
+    - [5.1.1. Double Equals](#511-double-equals)
+    - [5.1.2. Triple Equals](#512-triple-equals)
+    - [5.1.3. Comparison](#513-comparison)
+    - [5.1.4. Running Code in a Script](#514-running-code-in-a-script)
+  - [5.2. Truthy & Falsy ness](#52-truthy--falsy-ness)
+  - [5.3. Operator Precedence](#53-operator-precedence)
+  - [5.4. Switch](#54-switch)
+  - [5.5. When to Use and When Not-To Use Break](#55-when-to-use-and-when-not-to-use-break)
+  - [5.6. Ternary Operator](#56-ternary-operator)
 
 ## 2. 5 Types of Primitive Types
 
@@ -401,42 +402,44 @@ val = parseInt("100.30");
 val = parseFloat("100.30");
 ```
 
-### 4.11. Equality
+## 5. Conditionals
 
-#### 4.11.1. Double Equals
+### 5.1. Equality
+
+#### 5.1.1. Double Equals
 
 ![Double Equals](images/2020-07-24-16-35-34.png)
 ![Double Equal Examples](images/2020-07-24-16-36-26.png)
 
-#### 4.11.2. Triple Equals
+#### 5.1.2. Triple Equals
 
 > Also called Strict Equality Operator
 > ![Triple Equals](images/2020-07-24-16-37-23.png)
 
-#### 4.11.3. Comparison
+#### 5.1.3. Comparison
 
 ![Comparison](images/2020-07-24-16-39-18.png)
 
-#### 4.11.4. Running Code in a Script
+#### 5.1.4. Running Code in a Script
 
 ![Running COde in a Script](images/2020-07-24-16-39-54.png)
 
-### 4.12. Truthy & Falsy ness
+### 5.2. Truthy & Falsy ness
 
 ![Truthy and Falsy](images/2020-07-24-16-43-07.png)
 
-### 4.13. Operator Precedence
+### 5.3. Operator Precedence
 
 ![Operator Precedence](images/2020-07-24-16-45-47.png)
 
-### 4.14. Switch
+### 5.4. Switch
 
 ![Using Break](images/2020-07-24-17-39-54.png)
 
-### 4.15. When to Use and When Not-To Use Break
+### 5.5. When to Use and When Not-To Use Break
 
 ![Break](images/2020-07-24-17-40-10.png)
 
-### 4.16. Ternary Operator
+### 5.6. Ternary Operator
 
 ![Ternary Operator](images/2020-07-24-17-57-42.png)
