@@ -33,6 +33,8 @@
   - [5.4. Switch](#54-switch)
   - [5.5. When to Use and When Not-To Use Break](#55-when-to-use-and-when-not-to-use-break)
   - [5.6. Ternary Operator](#56-ternary-operator)
+- [6. Arrays](#6-arrays)
+  - [6.1. Ordered Collection of Values](#61-ordered-collection-of-values)
 
 ## 2. 5 Types of Primitive Types
 
@@ -443,3 +445,11 @@ val = parseFloat("100.30");
 ### 5.6. Ternary Operator
 
 ![Ternary Operator](images/2020-07-24-17-57-42.png)
+
+![Ternary in Action](images/2020-07-24-18-10-14.png)
+
+## 6. Arrays
+
+### 6.1. Ordered Collection of Values
+
+![Arrays](images/2020-07-24-18-37-27.png)
