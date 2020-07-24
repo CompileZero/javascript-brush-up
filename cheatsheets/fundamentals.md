@@ -1,3 +1,36 @@
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [5 Types of Primitive Types](#5-types-of-primitive-types) - [Technically there are 2 more: Symbol & BigInt](#technically-there-are-2-more-symbol--bigint)
+  - [Numbers](#numbers)
+  - [Variables](#variables)
+    - [Let](#let)
+    - [Const](#const)
+    - [Var](#var)
+      - [Use Cases](#use-cases)
+    - [Boolean](#boolean)
+    - [String](#string)
+    - [String Properties](#string-properties)
+    - [Some String Methods](#some-string-methods)
+      - [Using substring()](#using-substring)
+      - [Using substring() with length property](#using-substring-with-length-property)
+      - [The difference between substring() and substr()](#the-difference-between-substring-and-substr)
+      - [Differences between substring() and slice()](#differences-between-substring-and-slice)
+  - [Template Literals](#template-literals)
+    - [Math Object](#math-object)
+    - [TypeOf Operator](#typeof-operator)
+    - [parseInt & parseFloat](#parseint--parsefloat)
+    - [Type Conversion](#type-conversion)
+    - [Equality](#equality)
+      - [Double Equals](#double-equals)
+      - [Triple Equals](#triple-equals)
+      - [Comparison](#comparison)
+      - [Running Code in a Script](#running-code-in-a-script)
+    - [Truthy & Falsy ness](#truthy--falsy-ness)
+    - [Operator Precedence](#operator-precedence)
+    - [Switch](#switch)
+    - [When to Use and When Not-To Use Break](#when-to-use-and-when-not-to-use-break)
+
 # 5 Types of Primitive Types
 
 1. Number
@@ -393,3 +426,11 @@ val = parseFloat("100.30");
 ### Operator Precedence
 
 ![Operator Precedence](images/2020-07-24-16-45-47.png)
+
+### Switch
+
+![Using Break](images/2020-07-24-17-39-54.png)
+
+### When to Use and When Not-To Use Break
+
+![Break](images/2020-07-24-17-40-10.png)
