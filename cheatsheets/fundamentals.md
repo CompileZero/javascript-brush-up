@@ -35,6 +35,8 @@
   - [5.6. Ternary Operator](#56-ternary-operator)
 - [6. Arrays](#6-arrays)
   - [6.1. Ordered Collection of Values](#61-ordered-collection-of-values)
+  - [Modifying Arrays](#modifying-arrays)
+    - [Basic Array Methods](#basic-array-methods)
 
 ## 2. 5 Types of Primitive Types
 
@@ -453,3 +455,15 @@ val = parseFloat("100.30");
 ### 6.1. Ordered Collection of Values
 
 ![Arrays](images/2020-07-24-18-37-27.png)
+
+![Creating Arrays](images/2020-07-24-18-38-43.png)
+
+### Modifying Arrays
+
+![Modifying Arrays](images/2020-07-24-19-21-51.png)
+
+1. Arrays are Mutable (As opposed to Strings which are immutable)
+
+#### Basic Array Methods
+
+![Basic Array Methods](images/2020-07-24-19-24-56.png)
