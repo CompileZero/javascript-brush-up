@@ -11,26 +11,27 @@
     - [4.3.1. Use Cases](#431-use-cases)
   - [4.4. Boolean](#44-boolean)
   - [4.5. String](#45-string)
-  - [4.6. String Properties](#46-string-properties)
-  - [4.7. Some String Methods](#47-some-string-methods)
-    - [4.7.1. Using substring()](#471-using-substring)
-    - [4.7.2. Using substring() with length property](#472-using-substring-with-length-property)
-    - [4.7.3. The difference between substring() and substr()](#473-the-difference-between-substring-and-substr)
-    - [4.7.4. Differences between substring() and slice()](#474-differences-between-substring-and-slice)
-- [5. Template Literals](#5-template-literals)
-  - [5.1. Math Object](#51-math-object)
-  - [5.2. TypeOf Operator](#52-typeof-operator)
-  - [5.3. parseInt & parseFloat](#53-parseint--parsefloat)
-  - [5.4. Type Conversion](#54-type-conversion)
-  - [5.5. Equality](#55-equality)
-    - [5.5.1. Double Equals](#551-double-equals)
-    - [5.5.2. Triple Equals](#552-triple-equals)
-    - [5.5.3. Comparison](#553-comparison)
-    - [5.5.4. Running Code in a Script](#554-running-code-in-a-script)
-  - [5.6. Truthy & Falsy ness](#56-truthy--falsy-ness)
-  - [5.7. Operator Precedence](#57-operator-precedence)
-  - [5.8. Switch](#58-switch)
-  - [5.9. When to Use and When Not-To Use Break](#59-when-to-use-and-when-not-to-use-break)
+    - [4.5.1. String Properties](#451-string-properties)
+    - [4.5.2. Some String Methods](#452-some-string-methods)
+      - [4.5.2.1. Using substring()](#4521-using-substring)
+      - [4.5.2.2. Using substring() with length property](#4522-using-substring-with-length-property)
+      - [4.5.2.3. The difference between substring() and substr()](#4523-the-difference-between-substring-and-substr)
+      - [4.5.2.4. Differences between substring() and slice()](#4524-differences-between-substring-and-slice)
+  - [4.6. Template Literals](#46-template-literals)
+  - [4.7. Math Object](#47-math-object)
+  - [4.8. TypeOf Operator](#48-typeof-operator)
+  - [4.9. parseInt & parseFloat](#49-parseint--parsefloat)
+  - [4.10. Type Conversion](#410-type-conversion)
+  - [4.11. Equality](#411-equality)
+    - [4.11.1. Double Equals](#4111-double-equals)
+    - [4.11.2. Triple Equals](#4112-triple-equals)
+    - [4.11.3. Comparison](#4113-comparison)
+    - [4.11.4. Running Code in a Script](#4114-running-code-in-a-script)
+  - [4.12. Truthy & Falsy ness](#412-truthy--falsy-ness)
+  - [4.13. Operator Precedence](#413-operator-precedence)
+  - [4.14. Switch](#414-switch)
+  - [4.15. When to Use and When Not-To Use Break](#415-when-to-use-and-when-not-to-use-break)
+  - [4.16. Ternary Operator](#416-ternary-operator)
 
 ## 2. 5 Types of Primitive Types
 
@@ -122,7 +123,7 @@ const greeting;
 1. Be consistent with quotes!
    ![Be consistent with Quotes](images/2020-07-22-14-48-49.png)
 
-### 4.6. String Properties
+#### 4.5.1. String Properties
 
 1. `.length` property is used to access length of a string.
 2. Strings are immutable. (A string characters cannot be changed/manipulated)
@@ -133,7 +134,7 @@ const greeting;
    str.toUpperCase(); // This will return "HELLO" but value of str will still remain "Hello"
    ```
 
-### 4.7. Some String Methods
+#### 4.5.2. Some String Methods
 
 ```js
 // STRING METHODS AND CONCATENATION
@@ -181,7 +182,7 @@ val = firstName.lastIndexOf("l"); // O/P: 3
 val = firstName.charAt("2"); // O/P: "l"
 ```
 
-#### 4.7.1. Using substring()
+##### 4.5.2.1. Using substring()
 
 The following example uses substring() to display characters from the string 'Mozilla':
 
@@ -205,7 +206,7 @@ console.log(anyString.substring(0, 7));
 console.log(anyString.substring(0, 10));
 ```
 
-#### 4.7.2. Using substring() with length property
+##### 4.5.2.2. Using substring() with length property
 
 The following example uses the substring() method and length property to extract the last characters of a particular string. This method may be easier to remember, given that you don't need to know the starting and ending indices as you would in the above examples.
 
@@ -221,7 +222,7 @@ let anyString5 = anyString.substring(anyString.length - 5);
 console.log(anyString5);
 ```
 
-#### 4.7.3. The difference between substring() and substr()
+##### 4.5.2.3. The difference between substring() and substr()
 
 There's a subtle difference between the substring() and substr() methods, so you should be careful not to get them confused.
 
@@ -235,7 +236,7 @@ console.log(text.substring(2, 5)); // => "zil"
 console.log(text.substr(2, 3)); // => "zil"
 ```
 
-#### 4.7.4. Differences between substring() and slice()
+##### 4.5.2.4. Differences between substring() and slice()
 
 The substring() and slice() methods are almost identical, but there are a couple of subtle differences between the two, especially in the way negative arguments are dealt with.
 
@@ -261,7 +262,7 @@ console.log(text.slice(-5, 2)); // => ""
 console.log(text.slice(-5, -2)); // => "zil"
 ```
 
-## 5. Template Literals
+### 4.6. Template Literals
 
 ```js
 // TEMPLATE LITERALS
@@ -322,7 +323,7 @@ Null & Undefined
 
 ![Null & Undefined](images/2020-07-22-20-11-02.png)
 
-### 5.1. Math Object
+### 4.7. Math Object
 
 ```js
 // NUMBERS AND THE MATH OBJECT
@@ -354,7 +355,7 @@ val = Math.random();
 val = Math.floor(Math.random() * 20 + 1);
 ```
 
-### 5.2. TypeOf Operator
+### 4.8. TypeOf Operator
 
 1. `typeOf` is an operator, to reutrn the variable type.
 2. Use:
@@ -363,11 +364,11 @@ val = Math.floor(Math.random() * 20 + 1);
    typeOf str // O/P: String
    ```
 
-### 5.3. parseInt & parseFloat
+### 4.9. parseInt & parseFloat
 
 ![parseInt & parseFloat](images/2020-07-22-20-18-51.png)
 
-### 5.4. Type Conversion
+### 4.10. Type Conversion
 
 ```js
 // TYPE CONVERSION
@@ -400,38 +401,42 @@ val = parseInt("100.30");
 val = parseFloat("100.30");
 ```
 
-### 5.5. Equality
+### 4.11. Equality
 
-#### 5.5.1. Double Equals
+#### 4.11.1. Double Equals
 
 ![Double Equals](images/2020-07-24-16-35-34.png)
 ![Double Equal Examples](images/2020-07-24-16-36-26.png)
 
-#### 5.5.2. Triple Equals
+#### 4.11.2. Triple Equals
 
 > Also called Strict Equality Operator
 > ![Triple Equals](images/2020-07-24-16-37-23.png)
 
-#### 5.5.3. Comparison
+#### 4.11.3. Comparison
 
 ![Comparison](images/2020-07-24-16-39-18.png)
 
-#### 5.5.4. Running Code in a Script
+#### 4.11.4. Running Code in a Script
 
 ![Running COde in a Script](images/2020-07-24-16-39-54.png)
 
-### 5.6. Truthy & Falsy ness
+### 4.12. Truthy & Falsy ness
 
 ![Truthy and Falsy](images/2020-07-24-16-43-07.png)
 
-### 5.7. Operator Precedence
+### 4.13. Operator Precedence
 
 ![Operator Precedence](images/2020-07-24-16-45-47.png)
 
-### 5.8. Switch
+### 4.14. Switch
 
 ![Using Break](images/2020-07-24-17-39-54.png)
 
-### 5.9. When to Use and When Not-To Use Break
+### 4.15. When to Use and When Not-To Use Break
 
 ![Break](images/2020-07-24-17-40-10.png)
+
+### 4.16. Ternary Operator
+
+![Ternary Operator](images/2020-07-24-17-57-42.png)
