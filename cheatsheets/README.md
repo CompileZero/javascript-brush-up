@@ -47,11 +47,12 @@
       - [6.2.1.8. Slice](#6218-slice)
       - [6.2.1.9. Splice](#6219-splice)
       - [6.2.1.10. Sort](#62110-sort)
-  - [Reference Types](#reference-types)
-    - [By default,data is stored is a Value-Type.](#by-defaultdata-is-stored-is-a-value-type)
-    - [Value Types vs Reference Types](#value-types-vs-reference-types)
-      - [Changing arrays with Const](#changing-arrays-with-const)
-      - [Nested Arrays](#nested-arrays)
+  - [6.3. Reference Types](#63-reference-types)
+    - [6.3.0.1. By default,data is stored is a Value-Type.](#6301-by-defaultdata-is-stored-is-a-value-type)
+    - [6.3.1. Value Types vs Reference Types](#631-value-types-vs-reference-types)
+      - [6.3.1.1. Changing arrays with Const](#6311-changing-arrays-with-const)
+      - [6.3.1.2. Nested Arrays](#6312-nested-arrays)
+- [Objects](#objects) - [Properties](#properties)
 
 ## 2. 5 Types of Primitive Types
 
@@ -564,11 +565,11 @@ animals.splice(3, 2, "orca", "grizzly");
 > Instead for numbers, use compare function
 > ![Sort](images/2020-07-25-18-31-20.png)
 
-### Reference Types
+### 6.3. Reference Types
 
-##### By default,data is stored is a Value-Type.
+##### 6.3.0.1. By default,data is stored is a Value-Type.
 
-#### Value Types vs Reference Types
+#### 6.3.1. Value Types vs Reference Types
 
 ```js
 // ===============
@@ -601,11 +602,11 @@ nums.push("BOO!");
 myNums; //[2, 4, 6, 8, "BOO!"]
 ```
 
-##### Changing arrays with Const
+##### 6.3.1.1. Changing arrays with Const
 
 ![Changing Arrays with Const](images/2020-07-25-18-56-02.png)
 
-##### Nested Arrays
+##### 6.3.1.2. Nested Arrays
 
 ![Nested Arrays](images/2020-07-25-18-58-11.png)
 
@@ -626,3 +627,30 @@ animalPairs[0][1][0];
 animalPairs[0][1].push("hart");
 //apparently some people call male deer 'harts'.  idk.
 ```
+
+## Objects
+
+![Objects](images/2020-07-25-19-02-16.png)
+
+![What are Objects?](images/2020-07-25-19-03-46.png)
+
+```js
+// ARRAYS ARE NOT IDEAL FOR STORING ALL TYPES OF DATA.
+
+// We could use an array if we made sure we always follow the same pattern:
+//index 0: total steps
+//index 1: total floors
+//etc.
+const fitbitData = [308756, 1814, 211];
+
+//We have no insight into WHAT we are storing at each index
+
+//And we could mess things up super easily if we're not careful
+const lucyFitbitData = [12344, 1814, 211];
+
+// OBJECTS TO THE RESCUE!
+```
+
+###### Properties
+
+![What are Properties](images/2020-07-25-19-04-26.png)
