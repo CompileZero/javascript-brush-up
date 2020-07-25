@@ -37,6 +37,9 @@
   - [6.1. Ordered Collection of Values](#61-ordered-collection-of-values)
   - [6.2. Modifying Arrays](#62-modifying-arrays)
     - [6.2.1. Basic Array Methods](#621-basic-array-methods)
+      - [Shift and Unshift](#shift-and-unshift)
+      - [Some More Methods](#some-more-methods)
+      - [Concat](#concat)
 
 ## 2. 5 Types of Primitive Types
 
@@ -467,3 +470,15 @@ val = parseFloat("100.30");
 #### 6.2.1. Basic Array Methods
 
 ![Basic Array Methods](images/2020-07-24-19-24-56.png)
+
+##### Shift and Unshift
+
+![Shift and Unshift](images/2020-07-24-19-35-46.png)
+
+##### Some More Methods
+
+![More Methods](images/2020-07-24-19-37-09.png)
+
+##### Concat
+
+![Concat](images/2020-07-25-18-12-38.png)

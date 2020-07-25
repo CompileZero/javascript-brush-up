@@ -4,6 +4,8 @@
 
 ### `Inspired from Brad Traversy's Udemy Course: Modern JavaScript from The Beginning`
 
+### `Also Inspired from Stephen Grider & Colt Steele's Udemy Course: The Modern Javascript Bootcamp Course (2020)`
+
 https://www.udemy.com/course/modern-javascript-from-the-beginning/
 
 #### These are my personal notes while learning JavaScript. We tend to forget many things while learning to code. This repo serves a brush up of JavaScript Concepts, with cheatsheets and simple-projects for you to glance over the code.
@@ -15,6 +17,7 @@ https://www.udemy.com/course/modern-javascript-from-the-beginning/
 ## using the Projects
 
 ###### Every Project has a readme file with the following:
+
     1. Pre-requisites (What you should be familier with)
     2. A problem statement with clear expected output
     3. The concepts learnt during the project
