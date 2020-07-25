@@ -40,6 +40,10 @@
       - [6.2.1.1. Shift and Unshift](#6211-shift-and-unshift)
       - [6.2.1.2. Some More Methods](#6212-some-more-methods)
       - [6.2.1.3. Concat](#6213-concat)
+      - [6.2.1.4. Includes](#6214-includes)
+      - [6.2.1.5. Index Of](#6215-index-of)
+      - [Reverse](#reverse)
+      - [Join](#join)
 
 ## 2. 5 Types of Primitive Types
 
@@ -482,3 +486,25 @@ val = parseFloat("100.30");
 ##### 6.2.1.3. Concat
 
 ![Concat](images/2020-07-25-18-12-38.png)
+
+##### 6.2.1.4. Includes
+
+![Includes](images/2020-07-25-18-13-24.png)
+
+> The second argument is `indexFrom` meaning the index from which it will start checking for the value.
+
+![Index From Argument](images/2020-07-25-18-14-44.png)
+
+##### 6.2.1.5. Index Of
+
+![Index Of](images/2020-07-25-18-15-19.png)
+
+##### Reverse
+
+> It reverses the order of the actual array
+
+![Reverse Array](images/2020-07-25-18-16-35.png)
+
+##### Join
+
+![Joins the Array](images/2020-07-25-18-17-25.png)
