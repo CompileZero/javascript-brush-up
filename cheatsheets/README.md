@@ -42,8 +42,11 @@
       - [6.2.1.3. Concat](#6213-concat)
       - [6.2.1.4. Includes](#6214-includes)
       - [6.2.1.5. Index Of](#6215-index-of)
-      - [Reverse](#reverse)
-      - [Join](#join)
+      - [6.2.1.6. Reverse](#6216-reverse)
+      - [6.2.1.7. Join](#6217-join)
+      - [6.2.1.8. Slice](#6218-slice)
+      - [6.2.1.9. Splice](#6219-splice)
+      - [6.2.1.10. Sort](#62110-sort)
 
 ## 2. 5 Types of Primitive Types
 
@@ -499,12 +502,59 @@ val = parseFloat("100.30");
 
 ![Index Of](images/2020-07-25-18-15-19.png)
 
-##### Reverse
+##### 6.2.1.6. Reverse
 
 > It reverses the order of the actual array
 
 ![Reverse Array](images/2020-07-25-18-16-35.png)
 
-##### Join
+##### 6.2.1.7. Join
 
 ![Joins the Array](images/2020-07-25-18-17-25.png)
+
+##### 6.2.1.8. Slice
+
+![Slice](images/2020-07-25-18-18-43.png)
+
+```js
+let animals = ["shark", "salmon", "whale", "bear"];
+let swimmers = animals.slice(1, 3); // Includes index 1 upto index 3 but does not include index 3
+// O/P: swimmers = ['salmon','whale']
+```
+
+##### 6.2.1.9. Splice
+
+![Splice](images/2020-07-25-18-21-48.png)
+
+```js
+let animals = ["shark", "salmon", "whale", "bear", "lizard", "tortoise"];
+
+//splice(startIdx, deleteCount, itemsToInsert);
+
+// =====================
+// INSERTING w/ SPLICE
+// =====================
+// 'at index 1, delete 0 items and insert "octopus"'
+animals.splice(1, 0, "octopus");
+//["shark", "octopus", "salmon", "whale", "bear", "lizard", "tortoise"]
+
+// =====================
+// DELETING w/ SPLICE
+// =====================
+//'at index 5, delete 2 items'
+animals.splice(5, 2);
+//["shark", "octopus", "salmon", "whale", "bear"]
+
+// =====================
+// REPLACING w/ SPLICE
+// =====================
+//'at index 3, delete 2 items and replace them with "orca" and "grizzly"'
+animals.splice(3, 2, "orca", "grizzly");
+//Â ["shark", "octopus", "salmon", "orca", "grizzly"]
+```
+
+##### 6.2.1.10. Sort
+
+> Sort only works properly on Strings.
+> Instead for numbers, use compare function
+> ![Sort](images/2020-07-25-18-31-20.png)
