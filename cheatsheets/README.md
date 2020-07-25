@@ -47,6 +47,11 @@
       - [6.2.1.8. Slice](#6218-slice)
       - [6.2.1.9. Splice](#6219-splice)
       - [6.2.1.10. Sort](#62110-sort)
+  - [Reference Types](#reference-types)
+    - [By default,data is stored is a Value-Type.](#by-defaultdata-is-stored-is-a-value-type)
+    - [Value Types vs Reference Types](#value-types-vs-reference-types)
+      - [Changing arrays with Const](#changing-arrays-with-const)
+      - [Nested Arrays](#nested-arrays)
 
 ## 2. 5 Types of Primitive Types
 
@@ -558,3 +563,66 @@ animals.splice(3, 2, "orca", "grizzly");
 > Sort only works properly on Strings.
 > Instead for numbers, use compare function
 > ![Sort](images/2020-07-25-18-31-20.png)
+
+### Reference Types
+
+##### By default,data is stored is a Value-Type.
+
+#### Value Types vs Reference Types
+
+```js
+// ===============
+// VALUE TYPES
+// ===============
+//Value Types - the variable stores the actual value:
+
+let x = 100;
+let y = x;
+
+//If we change x
+x = 99;
+//y is unchanged
+y; //100
+
+// ===============
+// REFERENCE TYPES
+// ===============
+
+// Array variables do not hold the actual array
+//Instead, they store a REFERENCE to the array
+
+let nums = [2, 4, 6, 8];
+let myNums = nums; //myNums references the same array
+
+// If we change nums
+nums.push("BOO!");
+
+//My nums is also changed:
+myNums; //[2, 4, 6, 8, "BOO!"]
+```
+
+##### Changing arrays with Const
+
+![Changing Arrays with Const](images/2020-07-25-18-56-02.png)
+
+##### Nested Arrays
+
+![Nested Arrays](images/2020-07-25-18-58-11.png)
+
+```js
+const animalPairs = [
+  ["doe", ["buck", "stag"]],
+  ["ewe", "ram"],
+  ["peahen", "peacock"],
+];
+
+//To access 'ewe'
+animalPairs[1][0];
+
+//To access 'buck'
+animalPairs[0][1][0];
+
+//Updating a sub-array:
+animalPairs[0][1].push("hart");
+//apparently some people call male deer 'harts'.  idk.
+```
