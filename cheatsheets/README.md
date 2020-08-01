@@ -58,6 +58,7 @@
     - [7.0.1.2. Updating & Adding Properties](#7012-updating--adding-properties)
     - [7.0.1.3. Nested Arrays & objects](#7013-nested-arrays--objects)
   - [Objects and Reference Types](#objects-and-reference-types)
+  - [Array/Object Equality](#arrayobject-equality)
 
 ## 2. 5 Types of Primitive Types
 
@@ -703,3 +704,9 @@ const fitBitData = {
 ![Object Reference Types](images/2020-08-01-12-08-02.png)
 
 > That's why use const, so that we can change/update the value of the array/object, but we cannot change the reference of the variable to something entirely different.
+
+#### Array/Object Equality
+
+![Object Inequality](images/2020-08-01-12-12-02.png)
+
+![Object Equality](images/2020-08-01-12-12-21.png)
