@@ -57,6 +57,7 @@
     - [7.0.1.1. Accessing Objects in a different way](#7011-accessing-objects-in-a-different-way)
     - [7.0.1.2. Updating & Adding Properties](#7012-updating--adding-properties)
     - [7.0.1.3. Nested Arrays & objects](#7013-nested-arrays--objects)
+  - [Objects and Reference Types](#objects-and-reference-types)
 
 ## 2. 5 Types of Primitive Types
 
@@ -692,3 +693,13 @@ const fitBitData = {
 ##### 7.0.1.3. Nested Arrays & objects
 
 ![Nested Objects](images/2020-08-01-12-01-35.png)
+
+![Nested Array Usage](images/2020-08-01-12-02-30.png)
+
+#### Objects and Reference Types
+
+> Just like arrays, objects are reference types, and 2 different variables may point to the same object in the memory. In this way, if the value of the array is changed, both the variables will now point to the updated array.
+
+![Object Reference Types](images/2020-08-01-12-08-02.png)
+
+> That's why use const, so that we can change/update the value of the array/object, but we cannot change the reference of the variable to something entirely different.
