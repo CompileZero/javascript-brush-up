@@ -52,7 +52,11 @@
     - [6.3.1. Value Types vs Reference Types](#631-value-types-vs-reference-types)
       - [6.3.1.1. Changing arrays with Const](#6311-changing-arrays-with-const)
       - [6.3.1.2. Nested Arrays](#6312-nested-arrays)
-- [Objects](#objects) - [Properties](#properties)
+- [7. Objects](#7-objects) - [7.0.0.0.1. Properties](#70001-properties)
+  - [7.0.1. Creating Object Literals](#701-creating-object-literals)
+    - [7.0.1.1. Accessing Objects in a different way](#7011-accessing-objects-in-a-different-way)
+    - [7.0.1.2. Updating & Adding Properties](#7012-updating--adding-properties)
+    - [7.0.1.3. Nested Arrays & objects](#7013-nested-arrays--objects)
 
 ## 2. 5 Types of Primitive Types
 
@@ -628,7 +632,7 @@ animalPairs[0][1].push("hart");
 //apparently some people call male deer 'harts'.  idk.
 ```
 
-## Objects
+## 7. Objects
 
 ![Objects](images/2020-07-25-19-02-16.png)
 
@@ -651,6 +655,40 @@ const lucyFitbitData = [12344, 1814, 211];
 // OBJECTS TO THE RESCUE!
 ```
 
-###### Properties
+###### 7.0.0.0.1. Properties
 
 ![What are Properties](images/2020-07-25-19-04-26.png)
+
+#### 7.0.1. Creating Object Literals
+
+```js
+// totalSteps  -> 308727,
+// totalMiles  -> 211.7,
+// avgCalorieBurn -> 5755,
+// workoutsThisWeek -> '5 of 7',
+// avgGoodSleep   -> '2:13's
+
+const fitBitData = {
+  totalSteps: 308727,
+  totalMiles: 211.7,
+  avgCalorieBurn: 5755,
+  workoutsThisWeek: "5 of 7",
+  avgGoodSleep: "2:13",
+};
+```
+
+![Valid Keys](images/2020-07-25-19-14-22.png)
+
+![Number properties give errors](images/2020-07-25-19-14-57.png)
+
+##### 7.0.1.1. Accessing Objects in a different way
+
+![Accessing Objects](images/2020-07-25-19-17-09.png)
+
+##### 7.0.1.2. Updating & Adding Properties
+
+![Updating Properties](images/2020-08-01-12-00-02.png)
+
+##### 7.0.1.3. Nested Arrays & objects
+
+![Nested Objects](images/2020-08-01-12-01-35.png)
