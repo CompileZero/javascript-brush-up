@@ -106,7 +106,7 @@
 
 ```javascript
 //var, let, const
-//AR - Block Scoped
+//VAR - Function Scoped
 var name = 'John Doe';
 console.log(name);
 name = 'Steve Smith';
@@ -118,6 +118,12 @@ console.log(greeting);
 greeting = 'Hello';
 console.log(greeting);
 
+// You can also simply assign a value to a variable For example,
+
+x = 42;
+
+// This form creates an undeclared global variable. It also generates a strict JavaScript warning. Undeclared global variables can often lead to unexpected behavior. Thus, it is discouraged to use undeclared global variables.
+
 // letters, numbers, _, $
 // Can not start with number
 
@@ -127,20 +133,39 @@ var first_name = 'Sara'; // Underscore
 var FirstName = 'Tom'; // Pascal case
 var firstname;
 
-// LET - Function Scoped
+// LET - Block Scoped
 let name;
 name = 'John Doe';
 console.log(name);
 name = 'Steve Smith';
 console.log(name);
 
-// CONST - Cannot be reassigned
+// CONST - Block Scoped | Cannot be reassigned
 const name = 'John';
 console.log(name);
 //Can not reassign
 name = 'Sara';
 //Have to assign a value
 const greeting;
+
+
+// Variable Scope:
+
+// JavaScript before ECMAScript 2015 does not have block statement scope. Rather, a variable declared within a block is local to the function (or global scope) that the block resides within.
+
+// For example, the following code will log 5, because the scope of x is the global context (or the function context if the code is part of a function). The scope of x is not limited to the immediate if statement block.
+
+if (true) {
+  var x = 5;
+}
+console.log(x);  // x is 5
+
+//This behavior changes when using the let declaration (introduced in ECMAScript 2015).
+
+if (true) {
+  let y = 5;
+}
+console.log(y);  // ReferenceError: y is not defined
 ```
 
 ### 4.4. Boolean
