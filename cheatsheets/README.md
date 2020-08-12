@@ -67,6 +67,8 @@
   - [While Loops](#while-loops)
   - [Break Keyword](#break-keyword)
   - [For...of Loop](#forof-loop)
+    - [For...of Loop for Objects](#forof-loop-for-objects)
+    - [For...in Loop](#forin-loop)
 
 ## 2. 5 Types of Primitive Types
 
@@ -781,3 +783,15 @@ const fitBitData = {
 ![For...of](images/2020-08-12-23-23-02.png)
 
 ![For...of syntax](images/2020-08-12-23-23-09.png)
+
+#### For...of Loop for Objects
+
+
+![For ...of Object ](images/2020-08-12-23-34-36.png)
+![Object For...of](images/2020-08-12-23-32-31.png)
+
+#### For...in Loop
+
+![Above Problem Solution](images/2020-08-12-23-35-34.png)
+
+![](images/2020-08-12-23-36-52.png)
