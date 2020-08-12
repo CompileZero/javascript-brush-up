@@ -63,6 +63,10 @@
 - [8. The World of Loops](#8-the-world-of-loops)
   - [8.1. For Loop](#81-for-loop)
   - [8.2. For Loop & Arrays](#82-for-loop--arrays)
+  - [Nested For-Loops](#nested-for-loops)
+  - [While Loops](#while-loops)
+  - [Break Keyword](#break-keyword)
+  - [For...of Loop](#forof-loop)
 
 ## 2. 5 Types of Primitive Types
 
@@ -753,3 +757,27 @@ const fitBitData = {
 ### 8.2. For Loop & Arrays
 
 ![For Loops and Arrays](images/2020-08-12-19-30-09.png)
+
+### Nested For-Loops
+
+![Nested For Loops](images/2020-08-12-19-55-20.png)
+
+### While Loops
+
+![While Loops](images/2020-08-12-20-02-25.png)
+
+> While loops are used when you don't know how many times the loop is supposed to run!
+
+![While Loop Example](images/2020-08-12-22-15-02.png)
+
+> It's better to use for loops most of the time, as let is block scoped, and using it for several while loops while utilise more memory.
+
+### Break Keyword
+
+> Break keyword is used to come out of the loop.
+
+### For...of Loop
+
+![For...of](images/2020-08-12-23-23-02.png)
+
+![For...of syntax](images/2020-08-12-23-23-09.png)
