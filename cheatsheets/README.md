@@ -60,6 +60,9 @@
       - [7.0.1.3. Nested Arrays & objects](#7013-nested-arrays--objects)
     - [7.0.2. Objects and Reference Types](#702-objects-and-reference-types)
     - [7.0.3. Array/Object Equality](#703-arrayobject-equality)
+- [8. The World of Loops](#8-the-world-of-loops)
+  - [8.1. For Loop](#81-for-loop)
+  - [8.2. For Loop & Arrays](#82-for-loop--arrays)
 
 ## 2. 5 Types of Primitive Types
 
@@ -711,3 +714,17 @@ const fitBitData = {
 ![Object Inequality](images/2020-08-01-12-12-02.png)
 
 ![Object Equality](images/2020-08-01-12-12-21.png)
+
+
+## 8. The World of Loops
+
+![Loops](images/2020-08-12-19-22-07.png)
+
+
+### 8.1. For Loop
+
+![For Loop](images/2020-08-12-19-26-43.png)
+
+### 8.2. For Loop & Arrays
+
+![For Loops and Arrays](images/2020-08-12-19-30-09.png)
