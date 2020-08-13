@@ -68,6 +68,7 @@
   - [8.6. For...of Loop](#86-forof-loop)
     - [8.6.1. For...of Loop for Objects](#861-forof-loop-for-objects)
     - [8.6.2. For...in Loop](#862-forin-loop)
+- [Functions](#functions)
 
 ## 2. 5 Types of Primitive Types
 
@@ -791,3 +792,11 @@ const fitBitData = {
 ![Above Problem Solution](images/2020-08-12-23-35-34.png)
 
 ![For in Loops](images/2020-08-12-23-36-52.png)
+
+## Functions
+
+![Definition of Function](images/2020-08-13-09-12-22.png)
+
+![2 Step Process](images/2020-08-13-09-13-05.png)
+
+![Defining a function](images/2020-08-13-09-14-42.png)
