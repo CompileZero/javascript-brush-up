@@ -2,7 +2,7 @@
 
 - [1. Table of Contents](#1-table-of-contents)
 - [2. 5 Types of Primitive Types](#2-5-types-of-primitive-types)
-    - [2.0.1. Technically there are 2 more: Symbol & BigInt](#201-technically-there-are-2-more-symbol--bigint)
+  - [2.0.1. Technically there are 2 more: Symbol & BigInt](#201-technically-there-are-2-more-symbol--bigint)
 - [3. Numbers](#3-numbers)
 - [4. Variables](#4-variables)
   - [4.1. Let](#41-let)
@@ -48,27 +48,26 @@
       - [6.2.1.9. Splice](#6219-splice)
       - [6.2.1.10. Sort](#62110-sort)
   - [6.3. Reference Types](#63-reference-types)
-      - [6.3.0.1. By default,data is stored is a Value-Type.](#6301-by-defaultdata-is-stored-is-a-value-type)
+    - [6.3.0.1. By default,data is stored is a Value-Type.](#6301-by-defaultdata-is-stored-is-a-value-type)
     - [6.3.1. Value Types vs Reference Types](#631-value-types-vs-reference-types)
       - [6.3.1.1. Changing arrays with Const](#6311-changing-arrays-with-const)
       - [6.3.1.2. Nested Arrays](#6312-nested-arrays)
-- [7. Objects](#7-objects)
-        - [7.0.0.0.1. Properties](#70001-properties)
-    - [7.0.1. Creating Object Literals](#701-creating-object-literals)
-      - [7.0.1.1. Accessing Objects in a different way](#7011-accessing-objects-in-a-different-way)
-      - [7.0.1.2. Updating & Adding Properties](#7012-updating--adding-properties)
-      - [7.0.1.3. Nested Arrays & objects](#7013-nested-arrays--objects)
-    - [7.0.2. Objects and Reference Types](#702-objects-and-reference-types)
-    - [7.0.3. Array/Object Equality](#703-arrayobject-equality)
+- [7. Objects](#7-objects) - [7.0.0.0.1. Properties](#70001-properties)
+  - [7.0.1. Creating Object Literals](#701-creating-object-literals)
+    - [7.0.1.1. Accessing Objects in a different way](#7011-accessing-objects-in-a-different-way)
+    - [7.0.1.2. Updating & Adding Properties](#7012-updating--adding-properties)
+    - [7.0.1.3. Nested Arrays & objects](#7013-nested-arrays--objects)
+  - [7.0.2. Objects and Reference Types](#702-objects-and-reference-types)
+  - [7.0.3. Array/Object Equality](#703-arrayobject-equality)
 - [8. The World of Loops](#8-the-world-of-loops)
   - [8.1. For Loop](#81-for-loop)
   - [8.2. For Loop & Arrays](#82-for-loop--arrays)
-  - [Nested For-Loops](#nested-for-loops)
-  - [While Loops](#while-loops)
-  - [Break Keyword](#break-keyword)
-  - [For...of Loop](#forof-loop)
-    - [For...of Loop for Objects](#forof-loop-for-objects)
-    - [For...in Loop](#forin-loop)
+  - [8.3. Nested For-Loops](#83-nested-for-loops)
+  - [8.4. While Loops](#84-while-loops)
+  - [8.5. Break Keyword](#85-break-keyword)
+  - [8.6. For...of Loop](#86-forof-loop)
+    - [8.6.1. For...of Loop for Objects](#861-forof-loop-for-objects)
+    - [8.6.2. For...in Loop](#862-forin-loop)
 
 ## 2. 5 Types of Primitive Types
 
@@ -746,11 +745,9 @@ const fitBitData = {
 
 ![Object Equality](images/2020-08-01-12-12-21.png)
 
-
 ## 8. The World of Loops
 
 ![Loops](images/2020-08-12-19-22-07.png)
-
 
 ### 8.1. For Loop
 
@@ -760,11 +757,11 @@ const fitBitData = {
 
 ![For Loops and Arrays](images/2020-08-12-19-30-09.png)
 
-### Nested For-Loops
+### 8.3. Nested For-Loops
 
 ![Nested For Loops](images/2020-08-12-19-55-20.png)
 
-### While Loops
+### 8.4. While Loops
 
 ![While Loops](images/2020-08-12-20-02-25.png)
 
@@ -774,24 +771,23 @@ const fitBitData = {
 
 > It's better to use for loops most of the time, as let is block scoped, and using it for several while loops while utilise more memory.
 
-### Break Keyword
+### 8.5. Break Keyword
 
 > Break keyword is used to come out of the loop.
 
-### For...of Loop
+### 8.6. For...of Loop
 
 ![For...of](images/2020-08-12-23-23-02.png)
 
 ![For...of syntax](images/2020-08-12-23-23-09.png)
 
-#### For...of Loop for Objects
-
+#### 8.6.1. For...of Loop for Objects
 
 ![For ...of Object ](images/2020-08-12-23-34-36.png)
 ![Object For...of](images/2020-08-12-23-32-31.png)
 
-#### For...in Loop
+#### 8.6.2. For...in Loop
 
 ![Above Problem Solution](images/2020-08-12-23-35-34.png)
 
-![](images/2020-08-12-23-36-52.png)
+![For in Loops](images/2020-08-12-23-36-52.png)
