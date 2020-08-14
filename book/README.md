@@ -1,47 +1,29 @@
-# The javascript Brush Up Kit
+## Outline
 
-#### ✒️ Edit: I‘m currently, working on a book by the name of “JS For Humans”, in which I would be creating a complete javascript guide from beginner to advanced to behind-the-scenes (How JS Works) javascript concepts.
+---
 
-## A beginner-friendly curated Javascript Guide Kit to master the basic concepts of JavaScript
+---
 
-#### These are my personal notes while learning JavaScript. We tend to forget many things while learning to code. This repo serves a brush up of JavaScript Concepts, with cheatsheets and simple-projects for you to glance over the code.
+# `What is this all about?`
 
-## Using the cheatsheets
+I have come across many people who have a certain hatred towards programming.
+This hatred arises out of the fear of the unknown.
 
-###### Every file in the cheatsheets folder is segregated according to the concepts, from beginner to advanced. They are deliberately kept as .js files as it is easier to find the code you‘re searching that way.
+10-20 Programming Languages, Thousands of un-understandable sentences, wrapping
+your head around 100-200 Concepts (Basics) in Computer Science.
 
-## Using the Projects (Work in Progress)
+And then, just like that, some new technology comes around, and whatever was
+learnt becomes redundant. Right?
 
-###### Every Project has a readme file with the following:
+Absolutely Wrong.
 
-    1. Pre-requisites (What you should be familiar with)
-    2. A problem statement with clear expected output
-    3. The concepts learnt during the project
-    4. The steps to code the project
-    5. A clear commented source code for reference.
+Let's address all the issues that you have right now:
 
-### For Students
+1. Programming is a skill that works like a tool to solve your problems.
+   Programming is far from a
 
-Students can use the cheatsheets for reference, and projects to brush up
-concepts of JavaScript.
+> Q: How to use this book?
 
-### For Teachers
+A: Like Always, stert with
 
-Teachers can use the cheatsheets for their and the students’ reference, and
-projects to test the students of the JavaScript Skills.
-
-## Important Links for Reference:
-
-#### [1. `Brad Traversy's Udemy Course: Modern JavaScript from The Beginning`](https://www.udemy.com/course/modern-javascript-from-the-beginning/)
-
-#### [2. `Stephen Grider & Colt Steele's Udemy Course: The Modern Javascript Bootcamp Course (2020)`](https://www.udemy.com/course/modern-javascript-from-the-beginning/)
-
-#### [3. `JavaScript.info`](https://javascript.info/)
-
-#### [4. `MDN Web Developer Docs`](https://developer.mozilla.org/en-US/docs/Web)
-
-[comment]: # "This actually is the most platform independent comment"
-
-# Hello
-
-This is a new example
+1. Why to Learn JS?
