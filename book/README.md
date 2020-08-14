@@ -42,6 +42,6 @@ projects to test the students of the JavaScript Skills.
 
 [comment]: # "This actually is the most platform independent comment"
 
+# Hello
 
-
-
+This is a new example
