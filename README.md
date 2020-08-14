@@ -41,7 +41,3 @@ projects to test the students of the JavaScript Skills.
 #### [4. `MDN Web Developer Docs`](https://developer.mozilla.org/en-US/docs/Web)
 
 [comment]: # "This actually is the most platform independent comment"
-
-
-
-
