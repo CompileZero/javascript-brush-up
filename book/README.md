@@ -1,8 +1,20 @@
-## Outline
+# Notes to Self
 
 ---
 
----
+#### Target Audience:
+
+1. Beginner Devs:
+   1. Students/Developers who have had minimal programming experience (probably
+      just in school/college) and want to learn web development.
+   2. Devs Who have some basic understanding of HTML & CSS, and wan't to start
+      working on JS, but find it confusing.
+   3.
+2. Intermediate Devs:
+   1. Developers who are familiar with Basic JavaScript Concepts, and have used
+      their coding skills to create some basic Interactive Web Pages.
+   2. Devs who have worked for more than 3-4 Years on some other programming
+      language, and now want to dive into the world of web-development.
 
 # `What is this all about?`
 
@@ -24,6 +36,6 @@ Let's address all the issues that you have right now:
 
 > Q: How to use this book?
 
-A: Like Always, stert with
+A: Like Always, start with
 
 1. Why to Learn JS?
