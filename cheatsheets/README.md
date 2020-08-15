@@ -82,8 +82,11 @@
 
 ## 3. Numbers
 
-1. JS has only 1 numbers, (as opposed to java,and C++ where we have int,float, double etc.), which can be whole numbers, integers ( + / - ), and decimal numbers
-2. Does not store infinitely precise numbers (eg. 1.00090909090903 will give output **1**)
+1. JS has only 1 numbers, (as opposed to java,and C++ where we have int,float,
+   double etc.), which can be whole numbers, integers ( + / - ), and decimal
+   numbers
+2. Does not store infinitely precise numbers (eg. 1.00090909090903 will give
+   output **1**)
 3. 5 \*\* 2 = 5 to the power 2 = 25
 4. Arithmetic Operations follow BODMAS rule
 5. NaN = Not a number
@@ -246,7 +249,8 @@ val = firstName.charAt("2"); // O/P: "l"
 
 ##### 4.5.2.1. Using substring()
 
-The following example uses substring() to display characters from the string 'Mozilla':
+The following example uses substring() to display characters from the string
+'Mozilla':
 
 ```js
 let anyString = "Mozilla";
@@ -270,7 +274,10 @@ console.log(anyString.substring(0, 10));
 
 ##### 4.5.2.2. Using substring() with length property
 
-The following example uses the substring() method and length property to extract the last characters of a particular string. This method may be easier to remember, given that you don't need to know the starting and ending indices as you would in the above examples.
+The following example uses the substring() method and length property to extract
+the last characters of a particular string. This method may be easier to
+remember, given that you don't need to know the starting and ending indices as
+you would in the above examples.
 
 ```js
 // Displays 'illa' the last 4 characters
@@ -286,11 +293,15 @@ console.log(anyString5);
 
 ##### 4.5.2.3. The difference between substring() and substr()
 
-There's a subtle difference between the substring() and substr() methods, so you should be careful not to get them confused.
+There's a subtle difference between the substring() and substr() methods, so you
+should be careful not to get them confused.
 
-The arguments of substring() represent the starting and ending indexes, while the arguments of substr() represent the starting index and the number of characters to include in the returned string.
+The arguments of substring() represent the starting and ending indexes, while
+the arguments of substr() represent the starting index and the number of
+characters to include in the returned string.
 
-Furthermore, substr() is considered a legacy feature in ECMAScript and could be removed from future versions, so it is best to avoid using it if possible.
+Furthermore, substr() is considered a legacy feature in ECMAScript and could be
+removed from future versions, so it is best to avoid using it if possible.
 
 ```js
 let text = "Mozilla";
@@ -300,9 +311,13 @@ console.log(text.substr(2, 3)); // => "zil"
 
 ##### 4.5.2.4. Differences between substring() and slice()
 
-The substring() and slice() methods are almost identical, but there are a couple of subtle differences between the two, especially in the way negative arguments are dealt with.
+The substring() and slice() methods are almost identical, but there are a couple
+of subtle differences between the two, especially in the way negative arguments
+are dealt with.
 
-The substring() method swaps its two arguments if indexStart is greater than indexEnd, meaning that a string is still returned. The slice() method returns an empty string if this is the case.
+The substring() method swaps its two arguments if indexStart is greater than
+indexEnd, meaning that a string is still returned. The slice() method returns an
+empty string if this is the case.
 
 ```js
 let text = "Mozilla";
@@ -310,14 +325,16 @@ console.log(text.substring(5, 2)); // => "zil"
 console.log(text.slice(5, 2)); // => ""
 ```
 
-If either or both of the arguments are negative or NaN, the substring() method treats them as if they were 0.
+If either or both of the arguments are negative or NaN, the substring() method
+treats them as if they were 0.
 
 ```js
 console.log(text.substring(-5, 2)); // => "Mo"
 console.log(text.substring(-5, -2)); // => ""
 ```
 
-slice() also treats NaN arguments as 0, but when it is given negative values it counts backwards from the end of the string to find the indexes.
+slice() also treats NaN arguments as 0, but when it is given negative values it
+counts backwards from the end of the string to find the indexes.
 
 ```js
 console.log(text.slice(-5, 2)); // => ""
@@ -541,7 +558,8 @@ val = parseFloat("100.30");
 
 ![Includes](images/2020-07-25-18-13-24.png)
 
-> The second argument is `indexFrom` meaning the index from which it will start checking for the value.
+> The second argument is `indexFrom` meaning the index from which it will start
+> checking for the value.
 
 ![Index From Argument](images/2020-07-25-18-14-44.png)
 
@@ -602,8 +620,7 @@ animals.splice(3, 2, "orca", "grizzly");
 
 ##### 6.2.1.10. Sort
 
-> Sort only works properly on Strings.
-> Instead for numbers, use compare function
+> Sort only works properly on Strings. Instead for numbers, use compare function
 > ![Sort](images/2020-07-25-18-31-20.png)
 
 ### 6.3. Reference Types
@@ -734,11 +751,15 @@ const fitBitData = {
 
 #### 7.0.2. Objects and Reference Types
 
-> Just like arrays, objects are reference types, and 2 different variables may point to the same object in the memory. In this way, if the value of the array is changed, both the variables will now point to the updated array.
+> Just like arrays, objects are reference types, and 2 different variables may
+> point to the same object in the memory. In this way, if the value of the array
+> is changed, both the variables will now point to the updated array.
 
 ![Object Reference Types](images/2020-08-01-12-08-02.png)
 
-> That's why use const, so that we can change/update the value of the array/object, but we cannot change the reference of the variable to something entirely different.
+> That's why use const, so that we can change/update the value of the
+> array/object, but we cannot change the reference of the variable to something
+> entirely different.
 
 #### 7.0.3. Array/Object Equality
 
@@ -766,11 +787,13 @@ const fitBitData = {
 
 ![While Loops](images/2020-08-12-20-02-25.png)
 
-> While loops are used when you don't know how many times the loop is supposed to run!
+> While loops are used when you don't know how many times the loop is supposed
+> to run!
 
 ![While Loop Example](images/2020-08-12-22-15-02.png)
 
-> It's better to use for loops most of the time, as let is block scoped, and using it for several while loops while utilise more memory.
+> It's better to use for loops most of the time, as let is block scoped, and
+> using it for several while loops while utilise more memory.
 
 ### 8.5. Break Keyword
 
