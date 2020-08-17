@@ -1,12 +1,12 @@
-# 1. Table of Contents
-- [1. Table of Contents](#1-table-of-contents)
-- [2. What is JavaScript?](#2-what-is-javascript)
-  - [2.1. The definition:](#21-the-definition)
-- [3. Why is it called a “Scripting Language” ?](#3-why-is-it-called-a-scripting-language-)
-- [4. Why the name JavaScript?](#4-why-the-name-javascript)
-- [5. What to do from here?](#5-what-to-do-from-here)
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [What is JavaScript?](#what-is-javascript)
+  - [The definition:](#the-definition)
+- [Why is it called a “Scripting Language” ?](#why-is-it-called-a-scripting-language-)
+- [Why the name JavaScript?](#why-the-name-javascript)
+- [What to do from here?](#what-to-do-from-here)
 
-# 2. What is JavaScript?
+# What is JavaScript?
 
 Before answering this question, lets talk about where JS is used?
 
@@ -45,7 +45,7 @@ Chrome for example):
    4. And finally, what action(s) to take when “Create Account” button is
       clicked.
 
-## 2.1. The definition:
+## The definition:
 
 JavaScript® (often shortened to JS) is a lightweight, interpreted, or
 just-in-time compiled object-oriented language with first-class functions. While
@@ -67,8 +67,8 @@ Simply Put, JavaScript was initially created to make web-pages alive.
 
 > 🧩 Explanation:
 
-# 3. Why is it called a “Scripting Language” ?
+# Why is it called a “Scripting Language” ?
 
-# 4. Why the name JavaScript?
+# Why the name JavaScript?
 
-# 5. What to do from here?
+# What to do from here?
