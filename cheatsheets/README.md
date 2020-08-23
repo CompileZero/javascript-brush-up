@@ -65,10 +65,10 @@
   - [8.3. Nested For-Loops](#83-nested-for-loops)
   - [8.4. While Loops](#84-while-loops)
   - [8.5. Break Keyword](#85-break-keyword)
-  - [8.6. For...of Loop](#86-forof-loop)
-    - [8.6.1. For...of Loop for Objects](#861-forof-loop-for-objects)
-    - [8.6.2. For...in Loop](#862-forin-loop)
-- [Functions](#functions)
+  - [8.6. For…of Loop](#86-forof-loop)
+    - [8.6.1. For…of Loop for Objects](#861-forof-loop-for-objects)
+    - [8.6.2. For…in Loop](#862-forin-loop)
+- [9. Functions](#9-functions)
 
 ## 2. 5 Types of Primitive Types
 
@@ -92,7 +92,7 @@
 5. NaN = Not a number
    1. 0 / 0 = NaN
    2. 1 + NaN = NaN
-   3. 1/0 = Infinity (there's no way to store Infinity)
+   3. 1/0 = Infinity (there‘s no way to store Infinity)
    4. -0 = -0 (This has its own value in JavaScript, Super Weird!)
 
 ## 4. Variables
@@ -250,7 +250,7 @@ val = firstName.charAt("2"); // O/P: "l"
 ##### 4.5.2.1. Using substring()
 
 The following example uses substring() to display characters from the string
-'Mozilla':
+‘Mozilla’:
 
 ```js
 let anyString = "Mozilla";
@@ -276,7 +276,7 @@ console.log(anyString.substring(0, 10));
 
 The following example uses the substring() method and length property to extract
 the last characters of a particular string. This method may be easier to
-remember, given that you don't need to know the starting and ending indices as
+remember, given that you don‘t need to know the starting and ending indices as
 you would in the above examples.
 
 ```js
@@ -293,7 +293,7 @@ console.log(anyString5);
 
 ##### 4.5.2.3. The difference between substring() and substr()
 
-There's a subtle difference between the substring() and substr() methods, so you
+There‘s a subtle difference between the substring() and substr() methods, so you
 should be careful not to get them confused.
 
 The arguments of substring() represent the starting and ending indexes, while
@@ -757,7 +757,7 @@ const fitBitData = {
 
 ![Object Reference Types](images/2020-08-01-12-08-02.png)
 
-> That's why use const, so that we can change/update the value of the
+> That‘s why use const, so that we can change/update the value of the
 > array/object, but we cannot change the reference of the variable to something
 > entirely different.
 
@@ -787,36 +787,36 @@ const fitBitData = {
 
 ![While Loops](images/2020-08-12-20-02-25.png)
 
-> While loops are used when you don't know how many times the loop is supposed
+> While loops are used when you don‘t know how many times the loop is supposed
 > to run!
 
 ![While Loop Example](images/2020-08-12-22-15-02.png)
 
-> It's better to use for loops most of the time, as let is block scoped, and
+> It‘s better to use for loops most of the time, as let is block scoped, and
 > using it for several while loops while utilise more memory.
 
 ### 8.5. Break Keyword
 
 > Break keyword is used to come out of the loop.
 
-### 8.6. For...of Loop
+### 8.6. For…of Loop
 
 ![For...of](images/2020-08-12-23-23-02.png)
 
 ![For...of syntax](images/2020-08-12-23-23-09.png)
 
-#### 8.6.1. For...of Loop for Objects
+#### 8.6.1. For…of Loop for Objects
 
 ![For ...of Object ](images/2020-08-12-23-34-36.png)
 ![Object For...of](images/2020-08-12-23-32-31.png)
 
-#### 8.6.2. For...in Loop
+#### 8.6.2. For…in Loop
 
 ![Above Problem Solution](images/2020-08-12-23-35-34.png)
 
 ![For in Loops](images/2020-08-12-23-36-52.png)
 
-## Functions
+## 9. Functions
 
 ![Definition of Function](images/2020-08-13-09-12-22.png)
 
