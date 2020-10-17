@@ -9,4 +9,3 @@
 
 1. Understand the fundamentals
 2. Create a basic DOM based project
-3. Work on The important things (TODO: Change this)
